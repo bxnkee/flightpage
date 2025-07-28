@@ -17,7 +17,7 @@ import {
   Award,
   Map
 } from 'lucide-react';
-import { Flight, Airport } from './types';
+import { Flight, Airport } from './types/index';
 import { FlightSearch } from './components/FlightSearch';
 import { FlightResults } from './components/FlightResults';
 import { BookingForm } from './components/BookingForm';
@@ -586,7 +586,7 @@ function App() {
         </div>
       )}
 
-      <style jsx>{`
+      <style>{`
         @keyframes fade-in {
           from {
             opacity: 0;

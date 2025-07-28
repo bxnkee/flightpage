@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, Users, Plane, ArrowRight } from 'lucide-react';
-import { Airport } from '../types';
+import { Airport } from '../types/index';
 import { AirportSearch } from './AirportSearch';
 
 interface FlightSearchProps {

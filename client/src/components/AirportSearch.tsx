@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { MapPin, Search } from 'lucide-react';
-import { Airport } from '../types';
+import { Airport } from '../types/index';
 import { searchAirports } from '../data/airports';
 
 interface AirportSearchProps {

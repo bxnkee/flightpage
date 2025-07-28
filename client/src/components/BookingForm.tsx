@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { User, Mail, Phone, CreditCard, Lock, ArrowLeft } from 'lucide-react';
-import { Flight, Passenger } from '../types';
+import { Flight, Passenger } from '../types/index';
 import { v4 as uuidv4 } from 'uuid';
 
 interface BookingFormProps {
@@ -53,8 +53,8 @@ export const BookingForm: React.FC<BookingFormProps> = ({
       );
     }
     if (step === 2) {
-      return paymentData.cardNumber && paymentData.expiryDate && 
-             paymentData.cvv && paymentData.cardholderName;
+      return !!(paymentData.cardNumber && paymentData.expiryDate && 
+             paymentData.cvv && paymentData.cardholderName);
     }
     return false;
   };

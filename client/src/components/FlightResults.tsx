@@ -1,6 +1,6 @@
 import React from 'react';
 import { Plane, Clock, MapPin, Users, Euro } from 'lucide-react';
-import { Flight } from '../types';
+import { Flight } from '../types/index';
 import { format } from 'date-fns';
 
 interface FlightResultsProps {
